@@ -75,10 +75,10 @@ We will not deploy the webapp application using a devops pipeline, since the foc
 
 13. Edit the `flow/requirements.txt` file and add the following lines:
 </br>
-    ```
-    promptflow
-    promptflow-tools
-    ```
+```
+promptflow
+promptflow-tools
+```
 </br>
 
 14. Save the file.
@@ -87,24 +87,24 @@ We will not deploy the webapp application using a devops pipeline, since the foc
 </br>
     15.1. Add the following lines to the `Dockerfile`:
 
-    ```
+```
     RUN wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.js https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.js && wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.html https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.html
-    ```
+```
 </br>
 
 16. Run the following command to build the docker image, using docker desktop (on dist directory):
-    ```
-    docker build -t Yourflow .
-    ```
+```
+docker build -t Yourflow .
+```
 </br>
 
 17. Go to Azure Portal and under your Azure AI resource, hit the Show Keys and then copy the Key 1 value, since we will use it as environment variable to deploy the container.
 </br>
 
 18. Run the following command to run the docker image:
-    ```
-    docker run -e DEFAULT_AZUREOPENAI_API_KEY=<key1> -p 8080:8080 Yourflow
-    ```
+```
+docker run -e DEFAULT_AZUREOPENAI_API_KEY=<key1> -p 8080:8080 Yourflow
+```
 **Note:** If you need more environment variables, you can add them using the `-e` flag (like for instance the CosmosDB key, or the SearchAI key).
 
 e.g.:
@@ -114,9 +114,9 @@ docker run -e AOAI-CONNECTION_API_KEY=yourkey1 -e CONTOSO-COSMOS_KEY=yourkey2 -e
 </br>
 
 19. Test the containerized application by running on browser:
-    ``` 
-    http://localhost:8080
-    ```
+``` 
+http://localhost:8080
+```
 </br>
 
 20. Deploy the containerized application to service of your choice like Azure App Services, Container Apps, Kubernetes, or other.
