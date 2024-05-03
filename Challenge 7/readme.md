@@ -1,0 +1,1 @@
+# Open Hack - Challenge 7: LLMOps in Visual Studio Code
