@@ -6,7 +6,7 @@
 
 ## Development Environment
 
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&machine=basicLinux32gb&repo=R_kgDOLyHuiQ&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
+[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&machine=basicLinux32gb&repo=790752905&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
 [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/martaldsantos/AIAppsOpenHack)
 
 The repository is instrumented with a [DevContainer configuration](./.devcontainer/devcontainer.json),  configuration that can provide you with a _pre-built_ environment that can be launched locally, or in the cloud [GitHub Codespaces](https://docs.github.com/en/codespaces/overview). You can also elect to do a _manual_ environment setup locally, if desired. Here are the three options in increasing order of complexity and effort on your part. **Pick one!**
