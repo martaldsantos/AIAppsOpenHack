@@ -100,8 +100,7 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 </br>
 
 13. Edit the `flow/requirements.txt` file and add the following lines:
-</br>
-```text
+```shell
 promptflow
 promptflow-tools
 ```
@@ -119,7 +118,7 @@ azure-search-documents==11.4.0, azure-ai-ml, etc), depending on the flow. If you
 15.1. Add the following lines to the `Dockerfile`:
 
 ```
-    RUN wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.js https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.js && wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.html https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.html
+RUN wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.js https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.js && wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.html https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.html
 ```
 </br>
 
@@ -138,6 +137,8 @@ pf flow serve --source <path-to-your-flow-folder> --port 8080 --host localhost
 Note: If you have any errors, check the logs and fix them before containerizing the prompt flow.
 
 If using pf version 1.11.0 (pf -v to see your version), when running the previously command, an endpoint for debug and tracing your prompt flow will be shown (e.g. http://127.0.0.1:23333/v1.0/ui/traces/?#collection=basic).
+
+![alt text](./content/autogen-trace-detail.png)
 
 This endpoint is very useful to debug your prompt flow, since you can see the input and output of each step of your flow, and the spans of each step.
 
