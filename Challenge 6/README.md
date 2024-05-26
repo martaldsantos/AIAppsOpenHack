@@ -51,22 +51,18 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
     ```
 
 3. Open the `pf-src` folder in Visual Studio Code.
-</br>
     ```bash	
     code src
     ```
     3.1. Create a new conda environment with the following command:
-    </br>
     ```bash
     conda create --name pf python=3.9
     ```
     3.2. Activate the conda environment with the following command:
-    </br>
     ```bash
     conda activate pf
     ```
     3.3. Install the required packages with the following command:
-    </br>
     ```bash
     pip install promptflow promptflow-tools azure.ai.ml
     ```
@@ -105,7 +101,7 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 
 13. Edit the `flow/requirements.txt` file and add the following lines:
 </br>
-```
+```text
 promptflow
 promptflow-tools
 ```
@@ -174,6 +170,10 @@ docker run -e AOAI-CONNECTION_API_KEY=yourkey1 -e CONTOSO-COSMOS_KEY=yourkey2 -e
 http://localhost:8080
 ```
 </br>
+
+**Sample UI**:
+
+![alt text](./content/webapp.png)
 
 20. Deploy the containerized application to service of your choice like Azure App Services, Container Apps, Kubernetes, or other.
 
