@@ -1,5 +1,9 @@
 # Open Hack - Challenge 7: LLMOps in Visual Studio Code
-[![alt text](./content/challenge7.jpg)](https://github.com/microsoft/llmops-promptflow-template)
+
+
+<div align="center">
+    <img src="./content/challenge7.jpg" alt="Challenge 7" />
+</div>
 
 ## Introduction
 

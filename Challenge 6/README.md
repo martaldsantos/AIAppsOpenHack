@@ -1,6 +1,8 @@
 # Open Hack - Challenge 6: Deploy your WebApp
 
-[![alt text](./content/challenge6.jpg)]
+<p align="center">
+    <img src="./content/challenge6.jpg" alt="alt text">
+</p>
 
 This challenge is about deploying your WebApp to Azure based on the prompt flow previously created. You will learn how to containerized and deploy your WebApp to any Azure Service that supports a containerized application, like Azure App Services, Container Apps, Kubernetes, or other.
 
