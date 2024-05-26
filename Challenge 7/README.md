@@ -7,6 +7,8 @@ In this challenge, you will learn about LLMOps using Visual Studio Code and GitH
 
 - [Integrate Prompt Flow with LLMOps](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-integrate-with-llm-app-devops?view=azureml-api-2&tabs=cli)
 
+- [LLMOps with GitHub Actions](https://github.com/Azure/llmops-gha-demo)
+
 ## LLMOps Prompt Flow Features
 
 LLMOps with prompt flow is a "LLMOps template and guidance" to help you build LLM-infused apps using prompt flow. It provides the following features:
