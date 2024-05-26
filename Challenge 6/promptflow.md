@@ -1,14 +1,15 @@
-# PromptFlow 
+# Prompt Flow 
 
 ## Understanding PromptFlow
 
-PromptFlow is a tool that allows you to create, manage, and deploy AI models as a flow. It is a visual tool that allows you to create a flow of AI models and deploy them as a single entity.
+Prompt flow is a tool that allows you to create, manage, and deploy AI models as a flow. It is a visual tool that allows you to create a flow of AI models and deploy them as a single entity.
 
 https://microsoft.github.io/promptflow/how-to-guides/quick-start.html
 
-## Deploying a Flow using Docker
 
-To deploy a flow using Docker, you need to have Docker installed on your machine. You can follow the instructions on the following link to install Docker on your machine:
+## Deploying a Flow using Docker (locally)
+
+To deploy a flow using Docker, you need to have Docker installed on your machine, or use the pre built environment into GitHub Codespaces. You can follow the instructions on the following link to install Docker on your machine:
 
 https://microsoft.github.io/promptflow/how-to-guides/deploy-a-flow/deploy-using-docker.html
 
