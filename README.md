@@ -1,9 +1,6 @@
 # OpenHackAIApps
 
-add a description of the project here
-
-
-
+This repository contains the content for the Microsoft AI OpenHack. 
 
 ## Development Environment
 
