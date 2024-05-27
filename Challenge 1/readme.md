@@ -14,7 +14,7 @@ These steps will be done through the portal and through the Azure AI Studio.
 ## Sucess Criteria
 
 To complete this challenge successfully, you must:
-* Create an Azure AI Studio Hub
+* Create an Azure AI Studio Hub (the location of your service should be eastus)
 * Create an Azure AI Project (e.g name:  teamname)
 * Add a project description
 * Demonstrate you understand where to find these resources from the Azure Portal 
