@@ -9,6 +9,7 @@ design pattern with Azure Open AI's GPT models, it provides a natural language i
 
 The Innovating Apps with Azure OpenAI OpenHack will take you on a series of challenges to develop an end-to-end solution using Microsoft’s Generative AI offering. 
 The OpenHack consists of a series of challenges, in which your team must use the guidance and resources provided to implement intelligent search solutions on Azure. These challenges will increase in complexity as you progress through the OpenHack, staring from the creation of a project in Azure AI Studio to the deployment of our desired solution into a web app.
+
 The goal of this OpenHack is to provide you the ability to work as a team, learn from each other, with greater knowledge retention as each team will have to “figure out” how to reach the success criteria. The coaches provide technical guidance, but not answers to the 
 squads. 
 In the beginning of each challenge one of the coaches will be providing lectures, demos to setup challenges and review the previous challenge’s solutions.
