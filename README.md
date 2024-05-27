@@ -1,6 +1,9 @@
+![Designer (3)](https://github.com/martaldsantos/AIAppsOpenHack/assets/44229401/d197b4df-986c-4952-bf44-699f2315ab3f)
+
 # Open Hack: Innovating Apps with Azure AI Studio
 
-This OpenHack is an integration between Azure and OpenAI's large language models. It leverages Azure AI Search for data retrieval and ChatGPT-style Q&A interactions. Using the Retrieval Augmented Generation (RAG) design pattern with Azure Open AI's GPT models, it provides a natural language interaction to discover relevant responses to user queries. Azure AI Search simplifies data ingestion, transformation, indexing, and multilingual translation. The OpenHack includes sample data so it's ready to try end to end.
+This OpenHack is an integration between Azure and OpenAI's large language models. It leverages Azure AI Search for data retrieval and ChatGPT-style Q&A interactions. Using the Retrieval Augmented Generation (RAG)
+design pattern with Azure Open AI's GPT models, it provides a natural language interaction to discover relevant responses to user queries. Azure AI Search simplifies data ingestion, transformation, indexing, and multilingual translation. The OpenHack includes sample data so it's ready to try end to end.
 
 ## About the Hack
 
