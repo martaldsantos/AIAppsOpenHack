@@ -29,10 +29,11 @@ To complete this challenge successfully, you must:
 * Create an evaluation from your prompt flow
 * Correctly identify the metrics needed to our use case (and with the data you have available)
 * Correctly identify the parameters needed for each one of the metrics.
-* Wait for the evaluation to succeed on the evaluation tab*
-Be sure to enable the "Show batch runs" option
-![image](https://github.com/martaldsantos/AIAppsOpenHack/assets/44229401/0a68d79a-657b-48dd-90f2-ce3631eff64a)
+* Wait for the evaluation to succeed on the evaluation tab
+  
+*Be sure to enable the "Show batch runs" option*
 
+![image](https://github.com/martaldsantos/AIAppsOpenHack/assets/44229401/ea23a9c6-3123-4369-9c14-62e5d3890069)
 * Save and analyze the results from each one of the metrics.
 
 
