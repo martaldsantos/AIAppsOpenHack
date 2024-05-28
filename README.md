@@ -19,7 +19,7 @@ Get to know more about the OpenHack format on [What The Hack](https://github.com
 ## Challenges
 1. Challenge 01: **[Creation of the Project in Azure AI Studio](Challenge%201/readme.md)**
    - Create your Azure AI hub and AI Project to start working on your solution
-2. Challenge 02: **[Deploy and test a chat model without your data](Challenge%202%20/readme.md)**
+2. Challenge 02: **[Deploy and test a chat model without your data](Challenge%202/readme.md)**
    - Create your Azure OpenAI deployments and test your chat without data
 3. Challenge 03: **[Add your Data to your project](Challenge%203/readme.md)**
    - Let's start working with the data of Contoso! Let's get to know more about Contoso's product offering
