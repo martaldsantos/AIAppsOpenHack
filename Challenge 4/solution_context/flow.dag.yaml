@@ -1,0 +1,84 @@
+id: template_chat_flow
+name: Template Chat Flow
+inputs:
+  chat_history:
+    type: list
+    is_chat_input: false
+    is_chat_history: true
+  question:
+    type: string
+    is_chat_input: true
+  customer_id:
+    type: string
+    is_chat_input: false
+outputs:
+  answer:
+    type: string
+    reference: ${llm_response.output}
+    is_chat_output: true
+  context:
+    type: string
+    reference: ${customer_prompt.output}
+nodes:
+- name: question_embedding
+  type: python
+  source:
+    type: package
+    tool: promptflow.tools.embedding.embedding
+  inputs:
+    connection: ai-ohaiappshub124725792381_aoai
+    deployment_name: text-embedding-ada-002
+    input: ${inputs.question}
+  use_variants: false
+- name: retrieve_documentation
+  type: python
+  source:
+    type: code
+    path: retrieve_documentation.py
+  inputs:
+    search: scohaiappshub124725792381
+    embedding: ${question_embedding.output}
+    index_name: productmanual
+    question: ${inputs.question}
+  use_variants: false
+- name: customer_lookup
+  type: python
+  source:
+    type: code
+    path: customer_lookup.py
+  inputs:
+    conn: contoso-cosmos
+    customerId: ${inputs.customer_id}
+  use_variants: false
+- name: customer_prompt
+  type: prompt
+  source:
+    type: code
+    path: customer_prompt.jinja2
+  inputs:
+    customer: ${customer_lookup.output}
+    documentation: ${retrieve_documentation.output}
+    history: ${inputs.chat_history}
+  use_variants: false
+- name: llm_response
+  type: llm
+  source:
+    type: code
+    path: llm_response.jinja2
+  inputs:
+    deployment_name: gpt-4
+    temperature: 1
+    top_p: 1
+    max_tokens: 500
+    response_format:
+      type: text
+    prompt_text: ${customer_prompt.output}
+    question: ${inputs.question}
+  provider: AzureOpenAI
+  connection: ai-ohaiappshub124725792381_aoai
+  api: chat
+  module: promptflow.tools.aoai
+  use_variants: false
+node_variants: {}
+environment:
+  python_requirements_txt: requirements.txt
