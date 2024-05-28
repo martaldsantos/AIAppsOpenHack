@@ -8,8 +8,9 @@ In case neither or one of the options above is not to your desired liking, we sh
 
 ## Description
 
-We will create built-in evaluations to our model. To do this, we will use a previously created set of data that will be imputed to the model. You can find this .jsonl file in this folder with the format evaldata.jsonl.
+We will use built-in metrics evaluations to our model. To do this, we will use a previously created set of data that will be imputed to the model. You can find this .jsonl file in this folder with the format evaldata.jsonl.
 
+If you wish to find more metrics, be sure to have a look at the [curated and custom metrics offered by the AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
 
 ### Measures 
 
