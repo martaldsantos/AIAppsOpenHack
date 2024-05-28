@@ -52,5 +52,5 @@ Sometimes not all the documentation refers to what we want and need. Please find
 
 Sometimes the chat history can and should be empty
 
-You have the option to use a chat with or without context, as you also have two solutions in this repo. Please understand the difference and choose accordingly
+You have the option to use a chat with or without context, as you also have two solutions in **[Challenge 4](Challenge%204/readme.md)**. Please understand the difference and choose accordingly.
  
