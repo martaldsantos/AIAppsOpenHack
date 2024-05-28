@@ -27,7 +27,7 @@ Get to know more about the OpenHack format on [What The Hack](https://github.com
    - Now the real RAG begins: integrate the several components (datasources, ai search, etc.) in a logical flow
 5. Challenge 05: **[Evaluate the chat performance](Challenge%205/readme.md)**
    - How good is your chat to answer the typical questions from your customers?
-6. Challenge 06: **[Deploy your WebApp](Challenge%206/readme.md)**
+6. Challenge 06: **[Deploy your WebApp](Challenge%206/README.md)**
    - The app is ready to get tested: let's deploy our app into a web application
 7. Challenge 07: **[LLMOps in Visual Studio Code](Challenge%207/readme.md)**
    - Let's start working on your knowledge of LLMOps on Github!
