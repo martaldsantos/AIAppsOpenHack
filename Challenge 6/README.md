@@ -72,13 +72,21 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 
 </br>
 
-5. Set the connection provider to `Azure AI Connection for local connections` and create an AzureML connection string.
+5. Set the connections provider to `Azure AI Connection and others services for local connections` and create an AzureML connection string.
 </br>
 
-6. Save the connection and refresh the page.
+6. Save the connections and refresh the page.
+
+**Note**: If needed, you can create other connections like CosmosDB, Azure Search, etc using the [connections](./create-connections.ipynb) notebook using your env. file for the purpose with the specific keys.
+
+you can check the connections by running the command below in the terminal:
+```bash
+pf connection list
+```
+For more info check the prompt flow page under [connections](https://microsoft.github.io/promptflow/reference/pf-command-reference.html#pf-connection)
 </br>
 
-7. Open the flow and set the connection to `Default_AzureOpenAI` and the deployment name to `gpt-35-turbo`.
+7. Open the flow and set the connection to `Default_AzureOpenAI` and the deployment name to `gpt-35-turbo` if needed.
 </br>
 
 8. Save the flow.
