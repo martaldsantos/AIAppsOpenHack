@@ -45,7 +45,7 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 
 **Pré-req**
 </br>
-If you are running this challenge, install firstly the conda package (below instructions for linux installation on Codespaces:
+If you are running this challenge, install firstly the conda package (below instructions for linux installation) for windows see [installation](https://docs.anaconda.com/free/anaconda/install/):
 
 ```bash
 mkdir -p ~/miniconda3
