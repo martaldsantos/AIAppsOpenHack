@@ -84,7 +84,7 @@ conda -V
     ```
     3.3. Install the required packages with the following command:
     ```bash
-    pip install promptflow promptflow-tools azure.ai.ml promptflow-azure
+    pip install promptflow promptflow-tools azure.ai.ml promptflow-azure azure-cosmos azure-ai-resources azure-search-documents==11.4.0
     ```
 
 
