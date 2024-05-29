@@ -180,7 +180,7 @@ RUN wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptf
 
 16. Run the following command to build the docker image, using docker desktop (on dist directory):
 ```
-docker build -t Yourflow .
+docker build -t yourflow .
 ```
 </br>
 
