@@ -41,22 +41,33 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 
 ## Instructions
 
+**Pré-req**
+On visual studio code or into GitHub Codespaces, install firstly the conda package:
+
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+
+and then 
+
+~/miniconda3/bin/conda init bash
+
+After that, add a new terminal window and confirm conda is installed
+
+conda -V
+
 1. On visual studio code, or inside GitHub Codespaces, create two folders. A folder where you will save your prompt flow after downloaded from AI Studio (e.g. 'pf-src'), and a folder where your prompt flow will be ready to deploy and distribute after everything was configured (e.g. 'pf-dist').
 
 2. Download the prompt flow code from AI Studio and extract it to the previously created folder ('pf-src').
     2.1. Unzip the `YourFlow.zip` file
-    </br>
-    ```bash	
-    tar -xf YourFlow.zip -C src
-    ```
+ 
 
 3. Open the `pf-src` folder in Visual Studio Code.
-    ```bash	
-    code src
-    ```
+   
     3.1. Create a new conda environment with the following command:
     ```bash
-    conda create --name pf python=3.9
+    conda create --name pf python=3.11
     ```
     3.2. Activate the conda environment with the following command:
     ```bash
