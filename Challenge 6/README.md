@@ -92,12 +92,15 @@ conda -V
 
 </br>
 
-5. Set the connections provider to `Azure AI Connection and others services for local connections` and create an AzureML connection string.
+5. Set the connections provider to `Azure AI Connection and the others services used on your prompt flow for local connections`.
+
 </br>
 
 6. Save the connections and refresh the page.
 
 **Note**: If needed, you can create other connections like CosmosDB, Azure Search, etc using the [connections](./create-connections.ipynb) notebook using your env. file for the purpose with the specific keys.
+
+The [env.sample](./env.sample) file is where you create your env variables for the connections
 
 you can check the connections by running the command below in the terminal:
 ```bash
