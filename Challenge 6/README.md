@@ -112,8 +112,33 @@ For more info check the prompt flow page under [connections](https://microsoft.g
 7. Open the flow and set the connection to `Default_AzureOpenAI` and the deployment name to `gpt-35-turbo` if needed.
 </br>
 
-8. Save the flow.
+8. Save the flow and verify under the promp flow extension the **Test**, so you can test the flow locally, to see if connections are ok and no errors on the prompt flow
 </br>
+
+
+
+## Test locally before containerizing the prompt flow 
+
+Run the following command to test the prompt flow locally:
+```bash
+pf flow test --flow . --ui
+```
+or 
+```bash
+# Serve the flow at localhost:8080
+pf flow serve --source <path-to-your-flow-folder> --port 8080 --host localhost
+```
+
+Note: If you have any errors, check the logs and fix them before containerizing the prompt flow.
+
+If using pf version 1.11.0 (pf -v to see your version), when running the previously command, an endpoint for debug and tracing your prompt flow will be shown (e.g. http://127.0.0.1:23333/v1.0/ui/traces/?#collection=basic).
+
+![alt text](./content/autogen-trace-detail.png)
+
+This endpoint is very useful to debug your prompt flow, since you can see the input and output of each step of your flow, and the spans of each step.
+
+
+## Build and test the containerized prompt flow locally using Docker
 
 9. Go to the `Flows` folder and click on `pf-src`.
 </br>
@@ -152,29 +177,6 @@ azure-search-documents==11.4.0, azure-ai-ml, etc), depending on the flow. If you
 RUN wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.js https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.js && wget -O /opt/conda/envs/promptflow-serve/lib/python3.9/site-packages/promptflow/_sdk/_serving/static/index.html https://raw.githubusercontent.com/microsoft/promptflow/ffa78b411ccedd42e95bb412d2d2e83afa6addc0/src/promptflow/promptflow/_sdk/_serving/static/index.html
 ```
 </br>
-
-## Test locally before containerizing the prompt flow 
-
-Run the following command to test the prompt flow locally:
-```bash
-pf flow test --flow . --ui
-```
-or 
-```bash
-# Serve the flow at localhost:8080
-pf flow serve --source <path-to-your-flow-folder> --port 8080 --host localhost
-```
-
-Note: If you have any errors, check the logs and fix them before containerizing the prompt flow.
-
-If using pf version 1.11.0 (pf -v to see your version), when running the previously command, an endpoint for debug and tracing your prompt flow will be shown (e.g. http://127.0.0.1:23333/v1.0/ui/traces/?#collection=basic).
-
-![alt text](./content/autogen-trace-detail.png)
-
-This endpoint is very useful to debug your prompt flow, since you can see the input and output of each step of your flow, and the spans of each step.
-
-
-## Build and test the containerized prompt flow locally using Docker
 
 16. Run the following command to build the docker image, using docker desktop (on dist directory):
 ```
