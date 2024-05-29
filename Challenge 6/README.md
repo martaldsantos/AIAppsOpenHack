@@ -100,7 +100,7 @@ conda -V
 
 **Note**: If needed, you can create other connections like CosmosDB, Azure Search, etc using the [connections](./create-connections.ipynb) notebook using your env. file for the purpose with the specific keys.
 
-The [env.sample](./env.sample) file is where you create your env variables for the connections
+The [env.sample](./.env.sample) file is where you create your env variables for the connections
 
 you can check the connections by running the command below in the terminal:
 ```bash
