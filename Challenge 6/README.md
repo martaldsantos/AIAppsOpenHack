@@ -76,7 +76,7 @@ conda -V
    
     3.1. Create a new conda environment with the following command:
     ```bash
-    conda create --name pf python=3.11
+    conda create --name pf python=3.12
     ```
     3.2. Activate the conda environment with the following command:
     ```bash
