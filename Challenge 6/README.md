@@ -195,7 +195,7 @@ docker run -e DEFAULT_AZUREOPENAI_API_KEY=<key1> -p 8080:8080 Yourflow
 
 e.g.:
 ```bash
-docker run -e AOAI-CONNECTION_API_KEY=yourkey1 -e CONTOSO-COSMOS_KEY=yourkey2 -e CONTOSO-SEARCH_API_KEY=yourkey3 -p 8080:8080 yourImageName
+docker run -e AOAI_CONNECTION_API_KEY=yourkey1 -e CONTOSO_COSMOS_KEY=yourkey2 -e CONTOSO_SEARCH_API_KEY=yourkey3 -p 8080:8080 yourImageName
 ``` 
 </br>
 
