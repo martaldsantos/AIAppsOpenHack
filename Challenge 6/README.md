@@ -32,6 +32,8 @@ The repository is instrumented with a [DevContainer](./.devcontainer/devcontaine
  1. **Pre-built environment, on device** with Docker Desktop
  1. **Manual setup environment, on device** with Anaconda or venv
 
+    **Note**: When using GitHUb Codespaces, please select a machine with at least **4-core** and **16GB-RAM**, since this exercise needs this minimum requirements.
+
 ### About Prompt Flow
 
 Prompt flow is a tool that allows you to create, manage, and deploy AI models as a flow. It is a visual tool that allows you to create a flow of AI models and deploy them as a single entity.
@@ -42,20 +44,27 @@ Prompt flow is a tool that allows you to create, manage, and deploy AI models as
 ## Instructions
 
 **Pré-req**
-On visual studio code or into GitHub Codespaces, install firstly the conda package:
+</br>
+If you are running this challenge on your local machine, on your visual studio code, install firstly the conda package:
 
+```bash
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
+```
 
 and then 
 
+```bash
 ~/miniconda3/bin/conda init bash
+```
 
 After that, add a new terminal window and confirm conda is installed
 
+```bash
 conda -V
+```
 
 1. On visual studio code, or inside GitHub Codespaces, create two folders. A folder where you will save your prompt flow after downloaded from AI Studio (e.g. 'pf-src'), and a folder where your prompt flow will be ready to deploy and distribute after everything was configured (e.g. 'pf-dist').
 
